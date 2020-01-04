@@ -9713,4 +9713,7 @@ textarea.form-control {
     background: white;
   }
 
+  #emailBox {
+    width: 100%
+  }
   
