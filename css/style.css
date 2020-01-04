@@ -8738,12 +8738,27 @@ h1, h2, h3, h4, h5,
 .ftco-partner {
   padding: 1em 0 !important; }
   .ftco-partner .partner {
-    display: block;
-    padding: 0 20px; }
+    display: flex;
+    /* padding: 0 20px; */
+}
     @media (max-width: 991.98px) {
       .ftco-partner .partner {
         padding: 0 70px;
         margin-bottom: 40px; } }
+
+  .technologies {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    /* flex-wrap: wrap !important; */
+    flex-grow: 1;
+    align-items: stretch;
+    /* background: orange; */
+  } 
+
+  #express {
+    padding-top: 5px !important;
+    /* background: orange; */
+  }
 
 .services-1 {
   margin-bottom: 40px;
