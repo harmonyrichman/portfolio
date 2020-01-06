@@ -9734,7 +9734,7 @@ textarea.form-control {
   #fixName {
     padding-bottom: 180px;
   }
-/* 
-  #mouse {
-    padding-top: 100000px;
-  } */
+
+  #mouseFix {
+    padding-bottom: 100000px;
+  }
