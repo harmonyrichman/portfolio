@@ -4,7 +4,7 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'inquiries@harmonyrichman.com';
+$from = 'hmrichman@gmail.com';
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'hmrichman@gmail.com';
@@ -20,7 +20,7 @@ $fields = array('name' => 'Name', 'surname' => 'Surname', 'email' => 'Email', 'm
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later.';
+$errorMessage = 'There was an error while submitting the form. Please try again later. Not now, but later.';
 
 /*
  *  LET'S DO THE SENDING
@@ -74,7 +74,7 @@ else {
     echo $responseArray['message'];
 }
 
-function() {
+$(function () {
 
     // init the validator
     // validator files are included in the download package
@@ -117,5 +117,48 @@ function() {
             });
             return false;
         }
-    })
-};
+// $(function() {
+
+//     // init the validator
+//     // validator files are included in the download package
+//     // otherwise download from http://1000hz.github.io/bootstrap-validator
+
+//     $('#contact-form').validator();
+
+
+//     // when the form is submitted
+//     $('#contact-form').on('submit', function (e) {
+
+//         // if the validator does not prevent form submit
+//         if (!e.isDefaultPrevented()) {
+//             var url = "contact.php";
+
+//             // POST values in the background the the script URL
+//             $.ajax({
+//                 type: "POST",
+//                 url: url,
+//                 data: $(this).serialize(),
+//                 success: function (data)
+//                 {
+//                     // data = JSON object that contact.php returns
+
+//                     // we recieve the type of the message: success x danger and apply it to the 
+//                     var messageAlert = 'alert-' + data.type;
+//                     var messageText = data.message;
+
+//                     // let's compose Bootstrap alert box HTML
+//                     var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                    
+//                     // If we have messageAlert and messageText
+//                     if (messageAlert && messageText) {
+//                         // inject the alert to .messages div in our form
+//                         $('#contact-form').find('.messages').html(alertBox);
+//                         // empty the form
+//                         $('#contact-form')[0].reset();
+//                     }
+//                 }
+//             });
+//             return false;
+//         }
+//     })
+// };
