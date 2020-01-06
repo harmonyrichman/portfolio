@@ -9400,7 +9400,7 @@ textarea.form-control {
   /* display: flex !important; */
   /* background: orange; */
   display: block;
-  padding-left: 250px;
+  padding-left: 185px;
   /* justify-content: space-around; */
 
 }  
@@ -9735,6 +9735,6 @@ textarea.form-control {
     padding-bottom: 180px;
   }
 
-  #mouseFix {
+  /* #mouseFix {
     padding-bottom: 100000px;
-  }
+  } */

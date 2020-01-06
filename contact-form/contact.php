@@ -4,7 +4,7 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'hmrichman@gmail.com';
+$from = 'inquiries@harmonyrichman.com';
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'hmrichman@gmail.com';
@@ -20,7 +20,7 @@ $fields = array('name' => 'Name', 'surname' => 'Surname', 'email' => 'Email', 'm
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later. Not now, but later.';
+$errorMessage = 'There was an error while submitting the form. Please try again later.';
 
 /*
  *  LET'S DO THE SENDING
@@ -74,7 +74,7 @@ else {
     echo $responseArray['message'];
 }
 
-$(function () {
+function() {
 
     // init the validator
     // validator files are included in the download package
@@ -118,6 +118,7 @@ $(function () {
             return false;
         }
     })
+<<<<<<< HEAD
 });
 // $(function() {
 
@@ -164,3 +165,6 @@ $(function () {
 //         }
 //     })
 // };
+=======
+};
+>>>>>>> parent of 5ac28a6... working on php
