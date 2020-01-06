@@ -117,6 +117,8 @@ $(function () {
             });
             return false;
         }
+    })
+});
 // $(function() {
 
 //     // init the validator
